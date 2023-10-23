@@ -1,0 +1,7 @@
+Normal x
+Fire x
+Water x
+Grass x
+Ghost x
+Flying x
+Electric x
