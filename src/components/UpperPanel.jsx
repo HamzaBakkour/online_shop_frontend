@@ -6,6 +6,7 @@ import Search from './Search';
 import Categories from "../components/Categories";
 
 import React, {useState, useEffect} from "react";
+import ball_image from '../img/ball.png'
 
 
 function UpperPanel(){
@@ -51,7 +52,7 @@ function UpperPanel(){
         <>
             <Container >
                 
-                <Row style={{background: `url(${image_background})`,
+                <Row style={{background: `url(${ball_image})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: `center center`,
@@ -61,7 +62,6 @@ function UpperPanel(){
                     left: '0',
                     filter: `brightness(${brightnessLevel})`}}
                     >
-                    
                     <Col md={12} className='d-flex flex-column justify-content-end align-items-center'>
                         <Search className={brightnessLevel} />
                         <Categories />
