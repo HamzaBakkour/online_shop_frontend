@@ -182,7 +182,7 @@ function NavigationBar(){
                             </h5>
                         </div>
                         <Image
-                        src={ball_image}
+                        src={require(ball_image)}
                         alt="ball"
                         className='px-0 my-0'
                         width={60}
