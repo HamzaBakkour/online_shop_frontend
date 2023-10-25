@@ -54,7 +54,7 @@ function UpperPanel(){
         <>
             <Container >
                 
-                <Row style={{background: require(`url(${image_background})`),
+                <Row style={{background: require(`${image_background}`),
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: `center center`,
