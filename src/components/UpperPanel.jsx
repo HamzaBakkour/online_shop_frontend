@@ -6,7 +6,9 @@ import Search from './Search';
 import Categories from "../components/Categories";
 
 import React, {useState, useEffect} from "react";
+// import ball_image from '../img/ball.png'
 import ball_image from '../img/ball.png'
+
 
 
 function UpperPanel(){
