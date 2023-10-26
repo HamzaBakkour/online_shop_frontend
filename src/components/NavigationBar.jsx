@@ -65,19 +65,35 @@ function NavigationBar(){
 
 
 
-    const [ showNavBar, setShowNavBar ] = useState(true);
+    const [ showNavBar, setShowNavBar ] = useState(false);
+
+
+
+
     const listenScrollEvent = (event) => {
         event.preventDefault();
-        const position = window.scrollY / parseFloat(window.innerHeight)
-        if (position < 0.2){
-            setShowNavBar(false)}
-        else{ setShowNavBar(true)}
+        if ( window.scrollY > 10){
+            setShowNavBar(true)}
+        else if (window.scrollY == 0){
+            setShowNavBar(false)
+        }
+
+
     }
     useEffect(() => {
     window.addEventListener('scroll', listenScrollEvent);
     return () =>
     window.removeEventListener('scroll', listenScrollEvent);
     }, []);
+
+
+
+
+
+
+
+
+
     if (isLoading) {
         return <div className="App">Loading...</div>;
     }
@@ -203,7 +219,7 @@ function NavigationBar(){
                 </Container>
             </Container>
         </Navbar>
-        } 
+        }
 
 
     <CheckoutMoudal setShow={setShow} show={show}/>
