@@ -36,9 +36,20 @@ return(
     <Row>
         <hr className='mb-2'/>
         <p>
-            <a href="#" className="link-primary  p-3 text-decoration-none">API</a>
-            <a href="#" className="link-primary  p-3 text-decoration-none">Backend</a>
-            <a href="#" className="link-primary  p-3 text-decoration-none">Frontend</a>
+
+            <a href="https://funnyshop.hamzabakkour.se/api/schema/swagger-ui/#/" className="link-primary  p-3 text-decoration-none"
+            target="_blank"
+            rel="noreferrer">API</a>
+
+            <a href="https://github.com/HamzaBakkour/funnyShopAPI_aws_2" className="link-primary  p-3 text-decoration-none"
+            target="_blank"
+            rel="noreferrer"
+            >Backend</a>
+
+            <a href="https://github.com/HamzaBakkour/online_shop_frontend" className="link-primary  p-3 text-decoration-none"
+            target="_blank"
+            rel="noreferrer"
+            >Frontend</a>
         </p>
     </Row>
 

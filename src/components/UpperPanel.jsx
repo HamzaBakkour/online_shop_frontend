@@ -28,7 +28,7 @@ function UpperPanel(){
                     position: 'relative',
                     top: '0',
                     left: '0',
-                    filter: `brightness(1.2)`}}
+                    filter: `brightness(0.8)`}}
                     >
                     <Col md={12} className='d-flex flex-column justify-content-end align-items-center'>
                         <Search />

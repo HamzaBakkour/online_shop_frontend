@@ -7,7 +7,6 @@ import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Button } from 'react-bootstrap';
 import CartItem from './CartItem';
 import CheckoutMoudal from './CheckoutMoudal';
-import Dropdown from 'react-bootstrap/Dropdown'; 
 import axios from "axios";
 
 import React, { useContext, useState, useEffect } from "react";
