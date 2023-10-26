@@ -1,13 +1,12 @@
 import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
-import image_background from '../img/poppy-hill-our.gif';
 import Search from './Search';
 import Categories from "../components/Categories";
-
 import React, {useState, useEffect} from "react";
-// import ball_image from '../img/ball.png'
-import ball_image from '../img/ball.png'
+
+
+import image_background from '../assets/images/poppy-hill-our.webp'
 
 
 
@@ -49,12 +48,14 @@ function UpperPanel(){
     window.removeEventListener('scroll', listenScrollEvent);
     }, []);
 
-
     return (
         <>
             <Container >
+
                 
-                <Row style={{background: require(`${image_background}`),
+                <Row
+                style={{
+                    background: `url(${image_background})`,
                     backgroundSize: 'cover',
                     backgroundRepeat: 'no-repeat',
                     backgroundPosition: `center center`,

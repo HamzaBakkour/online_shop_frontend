@@ -1,6 +1,5 @@
 import Navbar from 'react-bootstrap/Navbar';
 import Container from 'react-bootstrap/Container';
-import ball_image from '../img/ball.png'
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import  Image  from 'react-bootstrap/Image';
@@ -13,6 +12,19 @@ import axios from "axios";
 
 import React, { useContext, useState, useEffect } from "react";
 import { Context } from '../pages/Home';
+
+import ball_image from '../assets/images/ball.png'
+
+
+
+
+
+
+
+
+
+
+
 
 
 function NavigationBar(){
@@ -182,7 +194,7 @@ function NavigationBar(){
                             </h5>
                         </div>
                         <Image
-                        src={require(ball_image)}
+                        src={ball_image}
                         alt="ball"
                         className='px-0 my-0'
                         width={60}
@@ -193,7 +205,6 @@ function NavigationBar(){
             </Container>
         </Navbar>
         } 
-
 
 
     <CheckoutMoudal setShow={setShow} show={show}/>

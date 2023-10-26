@@ -20,41 +20,29 @@ module.exports = {
 
 
       {
-        test: /\.(png|jpg|gif|svg)$/i,
+        test: /\.(png|jpg|gif|svg|gif|webp)$/i,
         use: [
           {
             loader: 'url-loader',
             options: {
-              limit: 8192
             }
           }
         ]
-      }
+      },
+
+    //   {
+    //     test:  /\.(gif)$/i,
+    //     loader: 'file-loader',
+    //     options: {
+    //       publicPath: '/'
+
+    //     },
+    // },
+
 
 
 
     ],
-
-
-
-
-
-
-    // loaders: [{
-    //   test: /.jsx?$/,
-    //   loader: 'babel-loader',
-    //   exclude: /node_modules/
-    // }, {
-    //   test: /\.css$/,
-    //   loader: "style-loader!css-loader"
-    // }, {
-    //   test: /\.(jpe?g|png|gif|woff|woff2|eot|ttf|svg)(\?[a-z0-9=.]+)?$/,
-    //   loader: 'url-loader?limit=100000' }]
-
-
-
-
-
   },
   resolve: {
     modules: [path.resolve(__dirname, "src"), "node_modules"],
@@ -80,4 +68,12 @@ module.exports = {
   output: {
     publicPath: '.',
   },
+
+  devServer: {
+    static: "./dist",
+    hot: true
+},
+
+
+
 };
